@@ -1,0 +1,298 @@
+.navigation {
+    background-color: #051a2d;
+    color: #171717;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navigation .linksContain {
+    margin-left: 90px;
+    float: right;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.navigation .linksContain .sale {
+    color: #b1d925;
+}
+.navigation .linksContain a {
+    color: #ffffff !important;
+    margin-right: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.navigation .linksContain a.dropdown-toggle {
+    font-size: 1.13rem;
+    font-weight: 600;
+}
+.navigation .linksContain .dropdown-toggle::after {
+    display: inline-block;
+    vertical-align: 4px;
+}
+.navigation .linksContain .dropdown-menu {
+    background-color: #ffffff;
+    color: #171717;
+    box-shadow: 1px 0 2px 1px rgba(10,10,10,0.125);
+    border-radius: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 16rem;
+    text-align: left;
+    list-style: none;
+    border: 1px solid rgba(0,0,0,.15);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navigation .linksContain .dropdown-menu a {
+    font-size: 0.93rem;
+    color: #171717 !important;
+    padding-left: 30px;
+}
+.navigation .linksContain .dropdown-menu a:hover {
+    font-size: 0.93rem;
+    color: #fff !important;
+    background-color: #920d1e;
+}
+
+/**
+ * =================================
+ * Site-wide search in header
+ * =================================
+ */
+.headerSearch {
+    margin-top: 50px;
+}
+.headerSearch .input-group {
+    width: 310px;
+}
+.headerSearch .form-control {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border: none;
+    border-bottom: 1px solid #c12136;
+    border-radius: 0;
+    background-clip: padding-box;
+    background-color: #920d1e;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: all .15s ease-in-out;
+}
+.headerSearch .form-control {
+  height: 37px !important;
+  font-family: 'Montserrat', ui-sans-serif;
+  font-size: 13px;
+  letter-spacing: calc(1em * (20/1000));
+  line-height: 37px !important;
+}
+form button.btn {
+    background-color: #c12136;
+    color: #424242;
+}
+
+::-webkit-input-placeholder {
+  color: #fff !important;
+}
+::-moz-placeholder {
+  color: #fff !important;
+}
+::-ms-input-placeholder {
+  color: #fff !important;
+}
+:-ms-input-placeholder {
+  color: #fff !important;
+}
+:-moz-placeholder {
+  color: #fff !important;
+}
+/** * ================================= */
+
+/**
+ *======================
+ * NAVIGATION ON MOBILE
+ *======================
+ */
+.mobileNavigation {
+    display: none;
+    background: #ffffff;
+    color: #171717;
+}
+.mobileNavigation {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #920d1e;
+    color: #171717;
+    -webkit-box-shadow: 0 8px 10px 2px rgb(250 250 250 / 20%);
+    -moz-box-shadow: 0 8px 10px 2px rgb(250 250 250 / 20%);
+    box-shadow: 0 8px 10px 2px rgb(250 250 250 / 20%);
+    z-index: 15;
+}
+.mobileNavigation .logo img {
+    max-width: 160%;
+}
+.mobileNavigation .content a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.mobileNavigation .content a:last-type {
+    margin-right: 0;
+}
+.mobileNavigation .navigation-icons, 
+.mobileOpen .navigation-icons, 
+.navigation-icons {
+    filter: invert();
+}
+.mobileNavigation .content img, 
+.mobileNavigation .mobileWrapa a.menu > img[src*="navicon.svg"][alt*="menu"], 
+.mobileOpen img[src*="grey.svg"][alt*="menu"] {
+    filter: brightness(0);
+}
+.mobileOpen {
+    display: none;
+    position: fixed;    
+    z-index: 45;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #920d1e;
+    color: #171717;
+}
+.mobileOpen .links {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 25px;
+}
+.mobileOpen .links a {
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 40px;
+    width: 100%;
+}
+.mobileOpen .links .lrgLink {
+    font-size: 1.13rem;
+    font-weight: 600;
+}
+.mobileOpen .links .lrgLink:after {
+    content: url( '/assets/icons/dropdown-mobile.svg' );
+    float: right;
+}
+.mobileMenu .logo img {
+    max-width: 95px;
+}
+.mobileMenu {
+    padding-top: 20px;    
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.mobileSubnav {
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    right: 125vw;
+    bottom: 0;
+    width: 100%;
+    background: #920d1e;
+    color: #171717;
+    -webkit-transition: right 500ms ease;
+    -moz-transition: right 500ms ease;
+    -o-transition: right 500ms ease;
+    transition: right 500ms ease;
+}
+.mobileSubnav.active {
+    right: 0;
+}
+.mobileSubnav .links {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 25px;
+}
+.mobileSubnav .links a {
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 40px;
+    width: 100%;
+}
+.mobileSubnav .links .lrgLink:before {
+    content: url(/assets/icons/dropdown-mobile-back.svg);
+    float:left;
+    margin-right: 15px;
+}
+.mobileHeaderSearch {
+    display: none;
+}
+a.account.fa.fa-sign-out-alt {
+    position: relative;
+    top: 0.375vh;
+    color: #000;
+    font-size: 1.375rem;
+    line-height: 20px;
+}
+
+@media (max-width: 992px) {
+    .topNavBG, .navigation {
+        display: none;
+    }
+    .mobileNavigation {
+        display: block;
+    }
+    .mobileNavigation .mobileWrap .content {
+	justify-content: flex-end;
+    }
+  .mobileHeaderSearch {
+    display: none;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    right: 0;
+    background-color: #f2feef;
+    z-index: 90900;
+  }
+  .mobileHeaderSearch input,
+  .input-group-append .btn,
+  .input-group-prepend .btn {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+    .headerSearch .input-group {
+        width: auto;
+    }
+    .topNavBG .links a {
+        padding-right: 10px;
+        margin-left: 10px;
+    }
+    .topNavBG .cart .qty {
+        margin-left: 0;
+    }
+    .headerSearch {
+        margin-top: 0;
+    }
+    .navContain {
+        margin-top: 15px;
+    }
+    .headerSearch .input-group {
+        min-width: 95vw;
+    }
+    .headerSearch .form-control {
+        padding: 0 .75rem;
+        height: 38px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mobileNavigation {
+        display: block;
+    }
+    .mobileWrap {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .topNavBG, .navigation {
+        display: none;
+    }
+    .mobileNavigation .mobileWrap .content {
+	justify-content: center;
+    }
+}
